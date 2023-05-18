@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Animation</title>
+</head>
+<body>
+
+<div class="container">
+    <h1>Random String Generator</h1>
+    <form id="myForm">
+        <p>String should be <input id="count" type="number" value="5" min="1" max="100"> characters long.</p>
+        <p>Which characters are allowed to occur in the strings?</p>
+        <label><input type="checkbox" id="isNumber"> Numeric digits (0-9)</label>
+        <label><input type="checkbox" id="isUpper"> Uppercase letters (A - Z)</label>
+        <label><input type="checkbox" id="isLower"> Lowercase letters (a - z)</label>
+        <button>Generation</button>
+    </form>
+    <hr>
+    <div class="resultGen">
+        <label>Result:</label>
+        <input readonly type="text" id="result"></input>
+    </div>    
+</div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
